@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .weather-app {
+        background-color: white;
+        padding: 30px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        max-width: 450px;
+        width: 100%;
+      }
+
+      form {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      input[type="text"] {
+        width: 70%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        margin-right: 10px;
+      }
+
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4f84e2;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      button:hover {
+        background-color: #3c67b8;
+      }
+
+      h2 {
+        font-size: 48px;
+        margin: 10px 0;
+        text-align: left;
+      }
+
+      .details {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #888;
+        text-align: left;
+      }
+
+      .temperature-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .temperature {
+        font-size: 48px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+
+      .temperature img {
+        margin-left: 10px;
+        width: 60px;
+      }
+
+      .info {
+        font-size: 16px;
+        color: #888;
+        text-align: left;
+      }
+
+      .info span {
+        font-weight: bold;
+        color: red;
+      }
+
+      footer {
+        margin-top: 20px;
+        font-size: 12px;
+        color: #666;
+        text-align: center;
+      }
+
+      footer a {
+        color: #4f84e2;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="weather-app">
+      <form>
+        <input type="text" placeholder="Enter a city.." />
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="temperature-section">
+        <div>
+          <h2>Paris</h2>
+          <div class="details">Saturday 15:32, moderate rain</div>
+          <div class="info">
+            Humidity: <span>87%</span>, Wind: <span>7.2 km/h</span>
+          </div>
+        </div>
+        <div class="temperature">
+          <span>24</span>°C
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+            alt="Weather icon"
+          />
+        </div>
+      </div>
+
+      <footer>
+        This project was coded by <a href="#">Habiba Amini</a> and is on
+        <a href="#">GitHub</a> and <a href="#">hosted on Netlify</a>
+      </footer>
+    </div>
+  </body>
+</html>
